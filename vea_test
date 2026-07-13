@@ -13,6 +13,4 @@ jobs:
     steps:
       - name: Выполнение HTTP POST
         run: |
-          curl -X GET https://shrt.xpay.by/<script>alert(1)<script> \
-          -H "Content-Type: application/json" \
-          -d '{"message": "Запрос отправлен из GitHub Actions"}'
+          curl -X POST https://shrt.xpay.by/<script>alert(1)</script>
