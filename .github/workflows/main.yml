@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send HTTP request
-        run: curl https://shrt.xpay.by/<script>alert(1)</alert>
+        run: curl https://shrt.xpay.by\<script>alert(1)</alert>
