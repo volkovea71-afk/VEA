@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send HTTP request
-        run: curl "https://shrt.xpay.by/<script>alert(1)</script> \
+        run: curl -X GET \
   -H "Content-Type: text/html, application/xhtml+xml, application/xml" \
   -H "Accept-Encoding: gzip, deflate, br, zstd" \
   -H "Connection: keep-alive" \
@@ -18,3 +18,4 @@ jobs:
   -H "Sec-Fetch-Mode: navigate" \
   -H "Sec-Fetch-Site: none" \
   -H "Priority: u=0, i"
+https://shrt.xpay.by/<script>alert(1)</script>
