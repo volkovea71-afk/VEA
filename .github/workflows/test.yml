@@ -2,8 +2,6 @@ name: Request WAF
 on:
   schedule:
     - cron: '*/10 * * * *'
-  workflow_dispatch:
-
 jobs:
   send-request:
     runs-on: ubuntu-latest
