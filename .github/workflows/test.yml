@@ -1,0 +1,12 @@
+name: Request WAF
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  send-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send HTTP request
+        run: curl -X POST https://shrt.xpay.by/<script>alert(1)</script>
